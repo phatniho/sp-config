@@ -17,3 +17,9 @@ eureka:
 #    registry-fetch-interval-seconds: 60 # 拉取注册信息间隔时间，默认 30 秒
 #  instance: 
 #    lease-renewal-interval-in-seconds: 60 #心跳间隔时间，默认 30 秒
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
