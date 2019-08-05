@@ -6,6 +6,11 @@ spring:
         service-id: config-server
       name: order-service
       profile: dev
+    inetutils:
+      ignored-interfaces:
+        - VM.*
+#      preferred-networks:
+#        - 176.202.2
       
 eureka:
   client:
